@@ -25,6 +25,7 @@ public class Cherry extends Food
         MyWorld world = (MyWorld) getWorld();
         if(getY() >= world.getHeight())
         {
+            world.gameOver(); 
             world.removeObject(this); 
         }
     }

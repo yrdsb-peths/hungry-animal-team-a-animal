@@ -29,7 +29,7 @@ public class Apple extends Food
         MyWorld world = (MyWorld) getWorld();
         if(getY() >= world.getHeight())
         {
-            //add gameover class
+            world.gameOver();
             world.removeObject(this); 
         }
         
