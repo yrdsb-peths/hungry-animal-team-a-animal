@@ -21,6 +21,13 @@ public class MyWorld extends World
         
     }
     
+
+    public void gameOver()
+    {
+        Label gameOverLabel = new Label("Game Over", 100);
+        addObject(gameOverLabel, 300, 200);
+    }
+
     public void spawnFood()
     {
         int rand = Greenfoot.getRandomNumber(2);
@@ -34,5 +41,6 @@ public class MyWorld extends World
         addObject(food, x, 0);
     }
         
-    
 }
+
+
