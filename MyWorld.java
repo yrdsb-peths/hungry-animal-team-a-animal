@@ -19,6 +19,8 @@ public class MyWorld extends World
         super(600, 400, 1, false); 
         spawnFood();
         
+        Elephant elephant = new Elephant();
+        addObject(elephant, 300,300);
     }
     
     public void spawnFood()
