@@ -33,6 +33,6 @@ public class MyWorld extends World
         int x = Greenfoot.getRandomNumber(600);
         addObject(food, x, 0);
     }
-    
+        
     
 }
