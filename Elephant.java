@@ -8,6 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Elephant extends Actor
 {    
+
+    GreenfootSound elephantSound = new GreenfootSound("elephantcub.mp3");
+
     //arrays for directions elephant is facing
     GreenfootImage[] idleRight = new GreenfootImage[8];
     GreenfootImage[] idleLeft = new GreenfootImage[8];
@@ -86,14 +89,14 @@ public class Elephant extends Actor
     {
         if(isTouching(Food.class))
         {
+            elephantSound.play();
             removeTouching(Food.class);
-            
             //cast back world elephant class lives in to call methods in world class
             MyWorld world = (MyWorld) getWorld();
             
             //call createApple and increaseScore classes
             world.spawnFood();
             //world.increaseScore();
-                    }
+        }
     }
 }
