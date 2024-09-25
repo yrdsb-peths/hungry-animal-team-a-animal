@@ -36,7 +36,7 @@ public class Elephant extends Actor
         }
         
         animationTimer.mark();
-        setImage(idleRight[0]);
+        
     }
     
     /**
@@ -69,10 +69,12 @@ public class Elephant extends Actor
         if(Greenfoot.isKeyDown("left"))
         {
             move(-5);
+            facing = "left"; 
         }
         else if(Greenfoot.isKeyDown("right"))
         {
             move(5);
+            facing = "right"; 
         }
         
         //remove apple and spawn new one if elephant eats it
