@@ -35,4 +35,10 @@ public class Apple extends Food
         
 
     }
+    
+    public void setSpeed(int spd)
+    { 
+        speed = spd; 
+    } 
+    
 }
