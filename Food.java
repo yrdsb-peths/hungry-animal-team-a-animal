@@ -13,4 +13,5 @@ public abstract class Food extends Actor {
     public Food(int value) {
         this.value = value;
     }
+    
 }

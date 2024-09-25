@@ -12,7 +12,7 @@ public class TitleScreen extends World
     Label titleLabel = new Label("Hungry elephant", 60); 
     Label instructions = new Label("Use <- and -> to move", 40);
     Label instructionPlay = new Label("press <SPACE> to start!", 40);
-
+    GreenfootSound bgMusic = new GreenfootSound("Peace Of Mind (Instrumental).mp3");
     /**
      * Constructor for objects of class TitleScreen.
      * 
@@ -25,6 +25,7 @@ public class TitleScreen extends World
         addObject(instructions, getWidth()/2, getHeight()/3); 
         addObject(instructionPlay, getWidth()/2, getHeight()/2); 
         prepare();
+        bgMusic.playLoop(); 
     }
 
     public void act()
@@ -32,7 +33,8 @@ public class TitleScreen extends World
         if(Greenfoot.isKeyDown("space"))
         {
             MyWorld gameWorld = new MyWorld(); 
-            Greenfoot.setWorld(gameWorld); 
+            Greenfoot.setWorld(gameWorld);
+            bgMusic.stop();
         }
     }
 
