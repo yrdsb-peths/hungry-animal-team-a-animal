@@ -97,6 +97,7 @@ public class Elephant extends Actor
             //call createApple and increaseScore classes
             world.spawnFood();
             //world.increaseScore();
+            world.increaseScore();
         }
     }
 }
