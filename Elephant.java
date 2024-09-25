@@ -59,7 +59,7 @@ public class Elephant extends Actor
         else
         {
             setImage(idleLeft[imageIndex]);
-            imageIndex = (imageIndex = 1) % idleLeft.length;
+            imageIndex = (imageIndex + 1) % idleLeft.length;
         }
     }
     
