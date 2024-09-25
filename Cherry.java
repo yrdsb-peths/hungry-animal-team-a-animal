@@ -17,11 +17,11 @@ public class Cherry extends Food
     {
         super(10); 
     }
+
     
     public void act()
     {
         setLocation(getX(), getY() + 4);
-        
         MyWorld world = (MyWorld) getWorld();
         if(getY() >= world.getHeight())
         {
