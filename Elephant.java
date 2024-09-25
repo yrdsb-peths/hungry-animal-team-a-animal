@@ -13,11 +13,11 @@ public class Elephant extends Actor
         // Add your action code here.
         if(Greenfoot.isKeyDown("left"))
         {
-            move(-1);
+            move(-5);
         }
         else if(Greenfoot.isKeyDown("right"))
         {
-            move(1);
+            move(5);
         }
         
         //remove apple and spawn new one if elephant eats it
@@ -29,9 +29,9 @@ public class Elephant extends Actor
      */
     public void eat()
     {
-        if(isTouching(Apple.class))
+        if(isTouching(Food.class))
         {
-            removeTouching(Apple.class);
+            removeTouching(Food.class);
             
             //cast back world elephant class lives in to call methods in world class
             MyWorld world = (MyWorld) getWorld();
