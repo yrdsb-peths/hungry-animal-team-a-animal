@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Cherry extends Food
 {
-    int speed = 2;
+    int speed;// = 4;
     
     
     /**
@@ -24,8 +24,9 @@ public class Cherry extends Food
     
     public void act()
     {
-        setLocation(getX(), getY() + 4);
+        setLocation(getX(), getY() + speed);
         MyWorld world = (MyWorld) getWorld();
+        
         if(getY() >= world.getHeight())
         {
             world.gameOver(); 
