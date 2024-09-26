@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+    import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Apple here.
@@ -11,14 +11,12 @@ public class Apple extends Food
     /**
      * Act - do whatever the Apple wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    int speed;// = 1;
+     */    
     
     public Apple()
     {
         super(1);
     }
-    
     
     public void act()
     {
@@ -34,9 +32,9 @@ public class Apple extends Food
         }
     }
     
+    @Override
     public void setSpeed(int spd)
     { 
         speed = spd; 
     } 
-    
 }

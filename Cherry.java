@@ -8,9 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Cherry extends Food
 {
-    int speed;// = 4;
-    
-    
     /**
      * Act - do whatever the Cherry wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -20,7 +17,6 @@ public class Cherry extends Food
     {
         super(10); 
     }
-
     
     public void act()
     {
@@ -34,10 +30,9 @@ public class Cherry extends Food
         }
     }
     
+    @Override
     public void setSpeed(int spd)
     { 
         speed = spd; 
     } 
-    
-    
 }
