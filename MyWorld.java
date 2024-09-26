@@ -31,13 +31,6 @@ public class MyWorld extends World
         scoreLabel = new Label(0, 80);
         addObject(scoreLabel, 50, 50);
     }
-    
-    public void increaseScore()
-    {
-        score++;
-        scoreLabel.setValue(score);
-    }
-    
 
     public void gameOver()
     {
@@ -45,6 +38,11 @@ public class MyWorld extends World
         addObject(gameOverLabel, 300, 200);
     }
 
+        public void increaseScore()
+    {
+        score++;
+        scoreLabel.setValue(score);
+    }
     
     public void increaseScore(int value)
     {
@@ -55,7 +53,6 @@ public class MyWorld extends World
             level += 1;
         }
     }
-    
     
     public void spawnFood()
     {
