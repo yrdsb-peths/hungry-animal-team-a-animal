@@ -8,10 +8,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 
 public abstract class Food extends Actor {
-    int value;
+    int value,speed;
     
     public Food(int value) {
         this.value = value;
     }
     
+    public void setSpeed(int spd)
+    {
+        speed = 1;
+    }
 }

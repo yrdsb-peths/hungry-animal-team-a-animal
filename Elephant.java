@@ -36,7 +36,6 @@ public class Elephant extends Actor
         }
         
         animationTimer.mark();
-        
     }
     
     /**
@@ -90,6 +89,7 @@ public class Elephant extends Actor
     public void eat()
     {
         Actor actor = getOneIntersectingObject(Food.class); 
+        
         if(actor != null)
         {
             Food food = (Food) actor;
@@ -98,7 +98,7 @@ public class Elephant extends Actor
             
             //call createApple and increaseScore classes
             world.spawnFood();
-            //world.increaseScore();
+            
             world.increaseScore(food.value);
             getWorld().removeObject(food);
         }

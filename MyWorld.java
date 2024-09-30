@@ -23,6 +23,8 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false); 
         bgMusic.playLoop(); 
+        
+        //create and add objects
         spawnFood();
         
         Elephant elephant = new Elephant();
@@ -31,19 +33,16 @@ public class MyWorld extends World
         scoreLabel = new Label(0, 80);
         addObject(scoreLabel, 50, 50);
     }
-
+    
+    /**
+     * Gameover screen
+     */
     public void gameOver()
     {
         Label gameOverLabel = new Label("Game Over", 100);
         addObject(gameOverLabel, 300, 200);
     }
 
-        public void increaseScore()
-    {
-        score++;
-        scoreLabel.setValue(score);
-    }
-    
     public void increaseScore(int value)
     {
         score += value;
