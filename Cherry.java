@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Cherry extends Food implements Destructable, Moveable 
+public class Cherry extends Food implements Destructible, Moveable 
 {
     /**
      * Act - do whatever the Cherry wants to do. This method is called whenever
@@ -23,7 +23,6 @@ public class Cherry extends Food implements Destructable, Moveable
         move(); 
         destroy(); 
     }
-    
     
     public void destroy()
     {
@@ -44,6 +43,6 @@ public class Cherry extends Food implements Destructable, Moveable
     @Override
     public void setSpeed(int spd)
     { 
-        speed = spd; 
+        speed = spd + 1;
     } 
 }

@@ -1,4 +1,4 @@
-    import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Apple here.
@@ -6,7 +6,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Apple extends Food implements Destructable, Moveable
+public class Apple extends Food implements Destructible, Moveable
 {
     /**
      * Act - do whatever the Apple wants to do. This method is called whenever
@@ -24,7 +24,6 @@ public class Apple extends Food implements Destructable, Moveable
         destroy(); 
     }
     
-    
     public void destroy()
     {
         MyWorld world = (MyWorld) getWorld();
@@ -41,10 +40,4 @@ public class Apple extends Food implements Destructable, Moveable
         int y = getY() + speed;
         setLocation(x, y); 
     }
-    
-    @Override
-    public void setSpeed(int spd)
-    { 
-        speed = spd; 
-    } 
 }
