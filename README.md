@@ -43,8 +43,8 @@ which makes the points gained be 1 when in contact with apple
 The method setSpeed sets the speed of the Food subclasses when it is called in the subclasses
 When called, the subclass has to have a variable to have it equal to the speed in the Food abstract class. 
 
-
-
+Classes that use Polymorphism & Override: Apple, Cherry
+The superclass Food contains two subclasses, Apple and Cherry. With the use of polymorphism, method overriding, and dynamic binding, we are able to adjust the speed of different subclasses by calling the same method on different objects. Through method overriding in particular, we set the speed of cherries to be one level faster than that of the apple while allowing any new subclasses to have a default speed equal to the apple. 
 
 
 
