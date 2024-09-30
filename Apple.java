@@ -15,7 +15,7 @@ public class Apple extends Food implements Destructible, Moveable
     
     public Apple()
     {
-        super(1);
+        super(5);
     }
     
     public void act()
