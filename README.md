@@ -22,6 +22,24 @@ The Destructable interface was used in the Apple and Cherry subclasses because t
 Having a Destructable interface helps group which classes can remove themselves from the world, and help organize the overall code.
 
 
+Abstract Classes:
+Food
+
+Inside the Abstract class is a constructor and a method
+The constructor has a parameter (int value) 
+which sets the value of the subclass to its value 
+For example: inside Apple's constructor
+Apple()
+{
+  super(1) 
+}
+makes Apple's value = to 1
+which makes the points gained be 1 when in contact with apple 
+
+The method setSpeed sets the speed of the Food subclasses when it is called in the subclasses
+When called, the subclass has to have a variable to have it equal to the speed in the Food abstract class. 
+
+
 
 
 
