@@ -6,7 +6,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Apple extends Food implements Enemy
+public class Apple extends Food implements Destructable, Moveable
 {
     /**
      * Act - do whatever the Apple wants to do. This method is called whenever
