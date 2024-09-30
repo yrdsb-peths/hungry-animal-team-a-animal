@@ -25,6 +25,10 @@ Having a Destructable interface helps group which classes can remove themselves 
 Abstract Classes:
 Food
 
+We've made a Food abstract class because it groups the classes called cherry and apple, as these two classes are part of the same concept/idea 
+Additionally, the Food abstract class also has methods and constructors that are used in cherry and apple.
+Which overall organizes the code and subclasses. 
+
 Inside the Abstract class is a constructor and a method
 The constructor has a parameter (int value) 
 which sets the value of the subclass to its value 
@@ -38,7 +42,6 @@ which makes the points gained be 1 when in contact with apple
 
 The method setSpeed sets the speed of the Food subclasses when it is called in the subclasses
 When called, the subclass has to have a variable to have it equal to the speed in the Food abstract class. 
-
 
 
 
