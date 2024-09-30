@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Elephant extends Actor
+public class Elephant extends Actor implements GameCharacter
 {    
 
     GreenfootSound elephantSound = new GreenfootSound("elephantcub.mp3");
@@ -62,9 +62,9 @@ public class Elephant extends Actor
         }
     }
     
-    public void act()
+    
+    public void move()
     {
-        // Add your action code here.
         if(Greenfoot.isKeyDown("left"))
         {
             move(-5);
@@ -75,6 +75,14 @@ public class Elephant extends Actor
             move(5);
             facing = "right"; 
         }
+    }
+    
+    
+    public void act()
+    {
+        // Add your action code here.
+        //move method from interface. 
+        move(); 
         
         //remove apple and spawn new one if elephant eats it
         eat();

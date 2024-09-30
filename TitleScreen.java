@@ -25,11 +25,13 @@ public class TitleScreen extends World
         addObject(instructions, getWidth()/2, getHeight()/3); 
         addObject(instructionPlay, getWidth()/2, getHeight()/2); 
         prepare();
-        bgMusic.playLoop(); 
+        
     }
 
     public void act()
     {
+        bgMusic.playLoop(); 
+        
         if(Greenfoot.isKeyDown("space"))
         {
             MyWorld gameWorld = new MyWorld(); 
