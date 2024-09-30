@@ -11,5 +11,4 @@ public interface Moveable
     //blank methods for implementation 
     
     void move(); 
-    
 }

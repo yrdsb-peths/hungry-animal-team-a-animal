@@ -16,6 +16,6 @@ public abstract class Food extends Actor {
     
     public void setSpeed(int spd)
     {
-        speed = 1;
+        speed = spd;
     }
 }

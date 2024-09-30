@@ -58,13 +58,13 @@ public class MyWorld extends World
         int rand = Greenfoot.getRandomNumber(2);
         Food food;
         if(rand == 0) {
-            Apple apple = new Apple();
+            Food apple = new Apple();
             apple.setSpeed(level);
             int x = Greenfoot.getRandomNumber(600);
             int y = 0; 
             addObject(apple, x, y);
         } else {
-            Cherry cherry = new Cherry();
+            Food cherry = new Cherry();
             cherry.setSpeed(level);
             int x = Greenfoot.getRandomNumber(600);
             int y = 0; 
@@ -73,5 +73,3 @@ public class MyWorld extends World
     }
         
 }
-
-

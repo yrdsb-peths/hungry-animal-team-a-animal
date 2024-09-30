@@ -62,7 +62,6 @@ public class Elephant extends Actor implements Moveable
         }
     }
     
-    
     public void move()
     {
         if(Greenfoot.isKeyDown("left"))
@@ -76,7 +75,6 @@ public class Elephant extends Actor implements Moveable
             facing = "right"; 
         }
     }
-    
     
     public void act()
     {
