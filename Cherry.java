@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Cherry extends Food
+public class Cherry extends Food implements Enemy 
 {
     /**
      * Act - do whatever the Cherry wants to do. This method is called whenever
@@ -20,7 +20,13 @@ public class Cherry extends Food
     
     public void act()
     {
-        setLocation(getX(), getY() + speed);
+        move(); 
+        destroy(); 
+    }
+    
+    
+    public void destroy()
+    {
         MyWorld world = (MyWorld) getWorld();
         
         if(getY() >= world.getHeight())
@@ -28,6 +34,11 @@ public class Cherry extends Food
             world.gameOver(); 
             world.removeObject(this); 
         }
+    }
+    
+    public void move()
+    {
+        setLocation(getX(), getY() + speed);
     }
     
     @Override

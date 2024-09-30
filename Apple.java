@@ -6,7 +6,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Apple extends Food
+public class Apple extends Food implements Enemy
 {
     /**
      * Act - do whatever the Apple wants to do. This method is called whenever
@@ -20,16 +20,26 @@ public class Apple extends Food
     
     public void act()
     {
-        int x = getX();
-        int y = getY() + speed;
-        setLocation(x, y); 
-        
+        move();
+        destroy(); 
+    }
+    
+    
+    public void destroy()
+    {
         MyWorld world = (MyWorld) getWorld();
         if(getY() >= world.getHeight())
         {
             world.gameOver();
             world.removeObject(this); 
         }
+    }
+    
+    public void move()
+    {
+        int x = getX();
+        int y = getY() + speed;
+        setLocation(x, y); 
     }
     
     @Override
